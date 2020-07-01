@@ -8158,7 +8158,7 @@ a {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
-  color: black;
+  color: #3e64ff;
   font-weight: 400; }
 
 .text-primary {
@@ -8185,7 +8185,7 @@ h1, h2, h3, h4, h5,
     margin: 0 auto;
     padding: 0; }
   .ftco-navbar-light .navbar-brand {
-    color: #000000;
+    color: #fff;
     padding-top: .7rem;
     padding-bottom: .7rem; }
     .ftco-navbar-light .navbar-brand:hover, .ftco-navbar-light .navbar-brand:focus {
@@ -8203,9 +8203,13 @@ h1, h2, h3, h4, h5,
     padding-bottom: .7rem;
     padding-left: 20px;
     padding-right: 20px;
-    color: #000000;
-    font-weight: 400;
+    color: #000;
+    font-weight: bold;
     opacity: 1 !important; }
+    .navbar-nav :hover{
+      transform: scale(1.1);
+      text-transform: uppercase;
+    }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link span {
       position: relative;
       display: block;
@@ -8398,19 +8402,20 @@ h1, h2, h3, h4, h5,
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -10%;
     content: '';
-    opacity: .1;
-    width: 50%;
-    background: #3e64ff; }
+    opacity: 0.7;
+    background-color: black;
+    width: 50%;}
   .hero-wrap .text {
     width: 100%; }
 
 .slider-text .subheading {
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 26px;
   font-weight: 800;
-  color: #3e64ff;
+  color: #FFD0B9;
+  text-shadow: 4px 4px #000;
   letter-spacing: 4px; }
 
 .slider-text h1 {
@@ -8423,7 +8428,7 @@ h1, h2, h3, h4, h5,
 .slider-text h2 {
   font-weight: 800; }
   .slider-text h2 span {
-    color: #3e64ff;
+    color: #FFFF31;
     text-decoration: underline; }
 
 .slider-text p {
@@ -8472,6 +8477,7 @@ h1, h2, h3, h4, h5,
   cursor: pointer;
   position: relative;
   text-align: center;
+  opacity: 1;
   margin: 0 auto;
   display: block; }
   .mouse-icon:after {
@@ -8481,7 +8487,7 @@ h1, h2, h3, h4, h5,
     right: 0;
     bottom: 0;
     content: '';
-    background: #edf0ff;
+    background: #3e64ff;
     z-index: -1;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -8500,8 +8506,8 @@ h1, h2, h3, h4, h5,
   -webkit-animation: 1.6s ease infinite wheel-up-down;
   -moz-animation: 1.6s ease infinite wheel-up-down;
   animation: 1.6s ease infinite wheel-up-down;
-  color: #3e64ff;
-  font-size: 30px; }
+  color: black;
+  font-size: 40px;}
 
 @-webkit-keyframes wheel-up-down {
   100% {
