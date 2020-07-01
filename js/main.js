@@ -45,25 +45,23 @@
    // Burger Menu
 	var burgerMenu = function() {
 
-		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
+		$('.navbar-toggler').click(function() {
+	    $(this).toggleClass('active');
+	    $('#ftco-nav').toggleClass('open').show();
+	  });
 
-			event.preventDefault();
 
-			if ( $('#ftco-nav').is(':visible') ) {
-				$(this).removeClass('active');
-			} else {
-				$(this).addClass('active');	
-			}
-
-			
-			
-		});
+		$('#ftco-nav li').on('click', function(){
+    	$("#ftco-nav").hide();
+    	$("#ftco-nav").removeClass("active");
+	});
 
 	};
 	burgerMenu();
 
 
 	var onePageClick = function() {
+
 
 
 		$(document).on('click', '#ftco-nav a[href^="#"]', function (event) {
