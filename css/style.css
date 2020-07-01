@@ -8203,7 +8203,7 @@ h1, h2, h3, h4, h5,
     padding-bottom: .7rem;
     padding-left: 20px;
     padding-right: 20px;
-    color: #000;
+    color: #fff;
     font-weight: bold;
     opacity: 1 !important; }
     .navbar-nav :hover{
@@ -8402,7 +8402,7 @@ h1, h2, h3, h4, h5,
     top: 0;
     left: 0;
     right: 0;
-    bottom: -10%;
+    bottom: 0;
     content: '';
     opacity: 0.7;
     background-color: black;
@@ -8464,9 +8464,10 @@ h1, h2, h3, h4, h5,
   font-size: 60px; }
 
 .mouse {
-  position: relative;
+  position: absolute;
   left: 0;
   right: 0;
+  top: 80%;
   bottom: 120px;
   z-index: 2; }
 
@@ -8699,10 +8700,20 @@ h1, h2, h3, h4, h5,
           background: #3e64ff; }
 
     @media only screen and (max-width: 1026px) {
-    #navi {
+    #navi{
         display: none;
     }
+    .mouse{
+        display: none;
+    }
+
 }
+
+  @media all and (max-width: 1026px) {
+    #bg-img{
+        background: black;
+    }
+  }
 
 
 
