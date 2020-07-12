@@ -8709,11 +8709,12 @@ h1, h2, h3, h4, h5,
 
 }
 
-  @media all {
+  @media all and (min-width: 1026px) {
     #bg-img{
         background-image: url(../images/bg.jpg);
     }
   }
+ }
 
 
 
